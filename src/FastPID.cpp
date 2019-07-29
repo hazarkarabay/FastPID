@@ -80,8 +80,9 @@ int16_t FastPID::step(int16_t sp, int16_t fb) {
 
   // int16 + int16 = int17
   int32_t err = int32_t(sp) - int32_t(fb);
-  int32_t P = 0, I = 0;
-  int32_t D = 0;
+  P = 0;
+  I = 0;
+  D = 0;
 
   if (_p) {
     // uint16 * int16 = int32

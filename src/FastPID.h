@@ -53,6 +53,9 @@ public:
   bool err() {
     return _cfg_err;
   }
+  
+public:
+  int32_t P, I, D;
 
 private:
 
